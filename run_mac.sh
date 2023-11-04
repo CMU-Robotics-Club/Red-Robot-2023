@@ -9,7 +9,7 @@ cd "${DIR}"
 
 python3 -m pip install pygame pyserial
 
-if python3 ./Controller-Interface/controller_hid.py ; then
+if python3 ./Controller-Interface/controller_pygame.py ; then
 	echo "Finished"
 else
 	echo "An error occurred. Press any key to exit."

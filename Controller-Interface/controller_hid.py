@@ -66,7 +66,8 @@ def main():
             joystick_state = [left_x, left_y, right_x, right_y, buttons1, buttons2]
 
             last_t = t
-            rand_bytes = random.randbytes(4)
+            rand_bytes = random.randrange(0, 2**32).to_bytes(4, 'little')
+            #rand_bytes = random.randbytes(4)
             packed_bytes = rand_bytes + bytes(joystick_state) + rand_bytes
             packed_bytes += bytes([sum(packed_bytes) % 256])
             radio.write(packed_bytes)

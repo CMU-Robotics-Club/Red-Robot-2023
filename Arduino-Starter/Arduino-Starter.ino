@@ -1,8 +1,10 @@
 // Replace 12345 with the correct team number and then uncomment the line below.
-#define TEAM_NUMBER 12345
+//#define TEAM_NUMBER 12345
 
 #ifndef TEAM_NUMBER
 #error "Define your team number with `#define TEAM_NUMBER 12345` at the top of the file."
+#elif TEAM_NUMBER < 1 || 20 < TEAM_NUMBER
+#error "Team number must be within 1 and 20"
 #endif
 
 void setup() {
@@ -57,8 +59,6 @@ void loop() {
 
   // Control servo 1 using the dpad
   // 6 = left, 2 = right, 0 = up, 4 = down, 8 = center
-  // (note that you will also see the value 0 if the controller
-  //  is disconnected)
   if (RR_dpad() == 6) { // left
 
     // we can't move a servo less than 0 degrees

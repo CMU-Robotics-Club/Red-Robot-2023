@@ -68,7 +68,7 @@ def main():
             right_y = 255 - right_y
 
         t = time.time()
-        if t - last_t >= 0.1:
+        if t - last_t >= 0.03:
             joystick_state = [left_x, left_y, right_x, right_y, buttons1, buttons2]
 
             last_t = t

@@ -25,12 +25,14 @@
 #define SERVO3_PIN 13
 #define SERVO4_PIN 12
 
+#define RADIO_LED_PIN 28
+
 uint8_t TARGET_ADDRESS[] = {0xF0,0xF0,0xF0,0xF0,0xD2};
 uint8_t LOCAL_ADDRESS[] = {0xF0,0xF0,0xF0,0xF0,0xE1};
 #define CHANNEL (TEAM_NUMBER * 6) // 0-125
-#define RF_POWER_LEVEL RF24_PA_MAX
+#define RF_POWER_LEVEL RF24_PA_HIGH
 
-RF24 radio(22,1);
+RF24 radio(22, 1, 1000000);
 
 #define PACKET_LEFT_X    0
 #define PACKET_LEFT_Y    1
@@ -43,6 +45,7 @@ RF24 radio(22,1);
 #define ULTRASONIC_ECHO 5
 
 uint8_t radio_packet[6];
+uint8_t radio_led_state = 0;
 
 bool RR_buttonA() {
   return (radio_packet[PACKET_BUTTONS_1] >> 5) & 1;
@@ -121,6 +124,13 @@ int RR_dpad() {
 }
 
 void setup1() {
+  radio_packet[0] = 127;
+  radio_packet[1] = 127;
+  radio_packet[2] = 127;
+  radio_packet[3] = 127;
+  radio_packet[4] = 0;
+  radio_packet[5] = 0;
+  
   pinMode(MOTOR1_ENABLE, OUTPUT);
   pinMode(MOTOR1_PHASE, OUTPUT);
   pinMode(MOTOR2_ENABLE, OUTPUT);
@@ -130,6 +140,8 @@ void setup1() {
   pinMode(MOTOR3_PHASE, OUTPUT);
   pinMode(MOTOR4_ENABLE, OUTPUT);
   pinMode(MOTOR4_PHASE, OUTPUT);
+
+  pinMode(RADIO_LED_PIN, OUTPUT);
   
   SPI.setTX(3);
   SPI.setRX(0);
@@ -137,7 +149,14 @@ void setup1() {
   SPI.setCS(1);
   SPI.begin();
   
-  radio.begin();
+  //Serial.begin(115200);
+  
+  if(!radio.begin(&SPI)) {
+    delay(1000);
+    Serial.println("Radio not responding");
+  } else {
+    //Serial.println("Radio connected");
+  }
   radio.setDataRate(RF24_1MBPS);
   radio.setChannel(CHANNEL);
   radio.setCRCLength(RF24_CRC_16);
@@ -163,22 +182,31 @@ bool isPacketValid(uint8_t *pkt) {
 }
 
 void loop1() {
+  delayMicroseconds(1000);
   if(radio.available()) {
     uint8_t buf[20];
     radio.read(buf, sizeof(buf));
 
     if(isPacketValid(buf+1)) {
       memcpy(radio_packet, buf+5, 6);
+      radio_led_state = (radio_led_state + 1) % 16;
+      digitalWrite(RADIO_LED_PIN, radio_led_state == 0);
+      //Serial.print("Valid ");
+      //Serial.println(radio_led_state);
     } else if(isPacketValid(buf+2)) {
       memcpy(radio_packet, buf+6, 6);
+      radio_led_state = (radio_led_state + 1) % 16;
+      digitalWrite(RADIO_LED_PIN, radio_led_state);
+      //Serial.print("Valid ");
+      //Serial.println(radio_led_state);
     } else {
       // Invalid
-      Serial.print("Invalid ");
+      /*Serial.print("Invalid ");
       for(int i = 0; i < 20; i++) {
         Serial.print(buf[i]);
         Serial.print(" ");
       }
-      Serial.println();
+      Serial.println();*/
     }
   }
 }

@@ -46,82 +46,65 @@ RF24 radio(22, 1, 1000000);
 
 uint8_t radio_packet[6];
 uint8_t radio_led_state = 0;
-bool recv_first_packet = false;
 
 bool RR_buttonA() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_1] >> 5) & 1;
 }
 bool RR_buttonB() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_1] >> 6) & 1;
 }
 bool RR_buttonX() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_1] >> 4) & 1;
 }
 bool RR_buttonY() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_1] >> 7) & 1;
 }
 bool RR_buttonLB() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 0) & 1;
 }
 bool RR_buttonRB() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 1) & 1;
 }
 bool RR_buttonBack() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 4) & 1;
 }
 bool RR_buttonStart() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 5) & 1;
 }
 bool RR_buttonL3() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 6) & 1;
 }
 bool RR_buttonR3() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 7) & 1;
 }
 float RR_axisLX() {
-  if(!recv_first_packet) return 0.0;
   float lx = (((float)(radio_packet[0])) / 127.5) - 1.0;
   lx = constrain(lx, -1.0, 1.0);
   if(lx >= -0.05 && lx <= 0.05) return 0.0;
   return lx;
 }
 float RR_axisLY() {
-  if(!recv_first_packet) return 0.0;
   float ly = (((float)(radio_packet[1])) / 127.5) - 1.0;
   ly = constrain(ly, -1.0, 1.0);
   if(ly >= -0.05 && ly <= 0.05) return 0.0;
   return ly;
 }
 float RR_axisRX() {
-  if(!recv_first_packet) return 0.0;
   float rx = (((float)(radio_packet[2])) / 127.5) - 1.0;
   rx = constrain(rx, -1.0, 1.0);
   if(rx >= -0.05 && rx <= 0.05) return 0.0;
   return rx;
 }
 float RR_axisRY() {
-  if(!recv_first_packet) return 0.0;
   float ry = (((float)(radio_packet[3])) / 127.5) - 1.0;
   ry = constrain(ry, -1.0, 1.0);
   if(ry >= -0.05 && ry <= 0.05) return 0.0;
   return ry;
 }
 bool RR_buttonLT() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 2) & 1;
 }
 bool RR_buttonRT() {
-  if(!recv_first_packet) return 0;
   return (radio_packet[PACKET_BUTTONS_2] >> 3) & 1;
 }
 /*float axisLT() {
@@ -137,7 +120,6 @@ float axisRT() {
   return rt;
 }*/
 int RR_dpad() {
-  if(!recv_first_packet) return 8;
   return radio_packet[PACKET_BUTTONS_1] & 0xF;
 }
 
@@ -167,13 +149,14 @@ void setup1() {
   SPI.setCS(1);
   SPI.begin();
   
-  //Serial.begin(115200);
+  Serial.begin(115200);
+  delay(1000);
   
   if(!radio.begin(&SPI)) {
     delay(1000);
     Serial.println("Radio not responding");
   } else {
-    //Serial.println("Radio connected");
+    Serial.println("Radio connected");
   }
   radio.setDataRate(RF24_1MBPS);
   radio.setChannel(CHANNEL);
@@ -204,30 +187,27 @@ void loop1() {
   if(radio.available()) {
     uint8_t buf[20];
     radio.read(buf, sizeof(buf));
-    //Serial.println("Recv radio packet");
 
     if(isPacketValid(buf+1)) {
       memcpy(radio_packet, buf+5, 6);
-      recv_first_packet = true;
       radio_led_state = (radio_led_state + 1) % 16;
       digitalWrite(RADIO_LED_PIN, radio_led_state == 0);
-      //Serial.print("Valid ");
-      //Serial.println(radio_led_state);
+      Serial.print("Valid ");
+      Serial.println(radio_led_state);
     } else if(isPacketValid(buf+2)) {
       memcpy(radio_packet, buf+6, 6);
-      recv_first_packet = true;
       radio_led_state = (radio_led_state + 1) % 16;
-      digitalWrite(RADIO_LED_PIN, radio_led_state);
-      //Serial.print("Valid ");
-      //Serial.println(radio_led_state);
+      digitalWrite(RADIO_LED_PIN, radio_led_state == 0);
+      Serial.print("Valid ");
+      Serial.println(radio_led_state);
     } else {
       // Invalid
-      /*Serial.print("Invalid ");
+      Serial.print("Invalid ");
       for(int i = 0; i < 20; i++) {
         Serial.print(buf[i]);
         Serial.print(" ");
       }
-      Serial.println();*/
+      Serial.println();
     }
   }
 }

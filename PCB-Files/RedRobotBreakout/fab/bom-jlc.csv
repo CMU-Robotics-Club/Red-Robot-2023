@@ -1,0 +1,20 @@
+Comment,Designator,Footprint,LCSC Part Number
+100u: ,"C1,C4,C6,C7,C8,C9,C10",Capacitor_SMD:CP_Elec_5x5.4,C22387981
+0.1u: ,"C2,C3,C5",Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,C24497
+PWR: ,D1,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
+D_Schottky: ,D2,Package_TO_SOT_SMD:SOT-23,C22466368
+LED: Light emitting diode,D3,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C2286
+Screw_Terminal_01x02: ,"J1,J2,J3,J4",RedRobotFootprints:ScrewTerminalP3.5mm,C695629
+Barrel_Jack_Switch: ,J5,Connector_BarrelJack:BarrelJack_Horizontal,C136744
+Conn_01x03_Pin: ,"J6,J7,J8,J9",Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,C6332196
+Conn_01x04_Pin: ,J10,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,C6332197
+Conn_01x09_Pin: ,J11,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,C492408
+Conn_01x02_Pin: ,"J13,J14,J15,J16,J17",Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,C2905434
+"BSS138: 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23","Q1,Q2,Q3,Q4",Package_TO_SOT_SMD:SOT-23,C112239
+4.7k: ,"R1,R3,R4,R5,R6,R7,R8,R9,R10",Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,C17936
+180: ,R2,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,C17924
+"SW_Push: Push button switch, generic, two pins",SW1,Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A,C318884
+NRF24L01_Breakout: ,U4,RF_Module:nRF24L01_Breakout,C92271
+LD29150DT50R: ,U5,Package_TO_SOT_SMD:TO-252-2,C157411
+Pico,"U100,U101",Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical,C7509519
+Driver,"U200,U201,U202,U203",Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical,C2935978

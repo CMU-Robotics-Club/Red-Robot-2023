@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/salix/School/Red Robot/RedRobotBreakout/RedRobotBreakout.kicad_sch</source>
+    <date>2023 September 27, Wednesday 12:45:15</date>
+    <tool>Eeschema 7.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>RedRobotBreakout.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100u</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b0894f2-9e7d-4ab9-93c5-23ab68af761c</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3c9d593-25f1-474d-9898-a00cf1de0c95</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.47u</value>
+      <footprint>Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c239f9fe-4f4d-4e20-a0fc-9548dc7e93e3</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100u</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd7774f3-abda-4cb2-aa59-7ab8982cd866</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92484711-221c-41b7-b77a-7abb3f890c9f</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100u</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30998a0d-a844-4182-b256-0d8178e3a20b</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>PWR</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b4885e7c-0878-47ff-95a6-b9dc4433f6f8</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d20d5548-b2c0-417a-99f5-e84600ff52ca</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>RedRobotFootprints:ScrewTerminalP3.5mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b7d042f-d8e9-400a-a38f-9c4fcd422ca3</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>RedRobotFootprints:ScrewTerminalP3.5mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68868ee8-6304-449d-a1ce-a7f06c6929bb</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>RedRobotFootprints:ScrewTerminalP3.5mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0e2a488-0ad0-426f-8e37-f306afabc706</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>RedRobotFootprints:ScrewTerminalP3.5mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eba18f03-2755-4c14-951a-667e28f33f0b</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Barrel_Jack_Switch</value>
+      <footprint>Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal</footprint>
+      <libsource lib="Connector" part="Barrel_Jack_Switch" description="DC Barrel Jack with an internal switch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="DC Barrel Jack with an internal switch"/>
+      <property name="ki_keywords" value="DC power barrel jack connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cce92835-804c-4091-a028-24101e2e2886</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6cabeb2c-6dcb-4534-bfe4-79f60fc26691</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7489b4fe-7fca-48c9-881e-947023d33022</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a464e0ea-c098-4e7a-aa88-dab48dac5f4a</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a2eb129-3b53-4be4-9de3-a14ecdfb01f1</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>Conn_01x04_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x04_Pin" description="Generic connector, single row, 01x04, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x04, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d01a17d-6efa-4a74-9573-c16b16c25b52</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>Conn_01x09_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x09_Pin" description="Generic connector, single row, 01x09, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x09, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91200a3e-f878-4e0e-a63e-ef231ca9a5ab</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a506e48e-4da7-4380-a08f-cdf747cce4bb</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e448ab60-8d1f-4e6d-aa4e-261a6a43be4f</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a51cc6d-112b-4f90-94a9-21db4947e8e6</tstamps>
+    </comp>
+    <comp ref="J15">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96cfd94f-403a-4e16-a386-5227f8bec382</tstamps>
+    </comp>
+    <comp ref="J16">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd11c143-bef4-456e-875e-be4bb135d0b0</tstamps>
+    </comp>
+    <comp ref="J17">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9314b4c-d48e-4a13-aef4-c34128e51336</tstamps>
+    </comp>
+    <comp ref="J18">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c2729bc-e246-449b-ae9e-63f1c2cde0cd</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>R_US</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a78284fa-c621-4859-a850-3b3720bd2a28</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>R_US</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b34e9f3-f75d-48cd-af9c-ea07f5aab0f8</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>Pico</value>
+      <footprint>MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH</footprint>
+      <libsource lib="MCU_RaspberryPi_and_Boards" part="Pico" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e21197c3-ad4a-45f5-95d8-95f3741abbe9</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>~</value>
+      <footprint>RedRobotFootprints:DRV8835</footprint>
+      <libsource lib="RedRobotParts" part="DRV8835" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>977389bd-9747-4445-8a82-d3079a7b3948</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>~</value>
+      <footprint>RedRobotFootprints:DRV8835</footprint>
+      <libsource lib="RedRobotParts" part="DRV8835" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4105be1d-81b8-4fa5-90ae-ee9a6d7ca888</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>NRF24L01_Breakout</value>
+      <footprint>RF_Module:nRF24L01_Breakout</footprint>
+      <datasheet>http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf</datasheet>
+      <libsource lib="RF" part="NRF24L01_Breakout" description="Ultra low power 2.4GHz RF Transceiver, Carrier PCB"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <property name="ki_description" value="Ultra low power 2.4GHz RF Transceiver, Carrier PCB"/>
+      <property name="ki_keywords" value="Low Power RF Transceiver breakout carrier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>672569dd-a3a2-4e57-b182-34a43c5362ab</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>LM2940CT-5.0/NOPB</value>
+      <footprint>RedRobotFootprints:TO254P1054X470X1955-3</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/LM2940CT-5.0/NOPB/Texas+Instruments/view-part/?ref=eda</field>
+        <field name="Description">
+1-A, 26-V, high-PSRR, low-dropout voltage regulator
+</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="MP">LM2940CT-5.0/NOPB</field>
+        <field name="Package">TO-220-3 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=18239&amp;manufacturer=Texas Instruments&amp;part_name=LM2940CT-5.0/NOPB&amp;search_term=None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/LM2940CT-5.0/NOPB/Texas+Instruments/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="LM2940CT-5.0_NOPB" part="LM2940CT-5.0{slash}NOPB" description=""/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="Description" value="&#xA;1-A, 26-V, high-PSRR, low-dropout voltage regulator&#xA;"/>
+      <property name="Package" value="TO-220-3 Texas Instruments"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/LM2940CT-5.0/NOPB/Texas+Instruments/view-part/?ref=snap"/>
+      <property name="MP" value="LM2940CT-5.0/NOPB"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=18239&amp;manufacturer=Texas Instruments&amp;part_name=LM2940CT-5.0/NOPB&amp;search_term=None"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/LM2940CT-5.0/NOPB/Texas+Instruments/view-part/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d048fa4c-9e52-4f64-82ff-bcd9d96e6998</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>BOB-12009</value>
+      <footprint>BOB-12009:CONV_BOB-12009</footprint>
+      <fields>
+        <field name="Check_prices">https://www.snapeda.com/parts/BOB-12009/SparkFun+Electronics/view-part/?ref=eda</field>
+        <field name="Description">
+BSS138 Logic-Level Translator Interface Evaluation Board
+</field>
+        <field name="DigiKey_Part_Number">1568-1209-ND</field>
+        <field name="MANUFACTURER">SparkFun Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="MF">SparkFun</field>
+        <field name="MP">BOB-12009</field>
+        <field name="PARTREV">01</field>
+        <field name="Package">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=551764&amp;manufacturer=SparkFun&amp;part_name=BOB-12009&amp;search_term=None</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/BOB-12009/SparkFun+Electronics/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="BOB-12009" part="BOB-12009" description=""/>
+      <property name="DigiKey_Part_Number" value="1568-1209-ND"/>
+      <property name="MF" value="SparkFun"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="N/A"/>
+      <property name="Package" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/BOB-12009/SparkFun+Electronics/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="01"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/BOB-12009/SparkFun+Electronics/view-part/?ref=snap"/>
+      <property name="MP" value="BOB-12009"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=551764&amp;manufacturer=SparkFun&amp;part_name=BOB-12009&amp;search_term=None"/>
+      <property name="Description" value="&#xA;BSS138 Logic-Level Translator Interface Evaluation Board&#xA;"/>
+      <property name="MANUFACTURER" value="SparkFun Electronics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RedRobotBreakout.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3e6c1a3-b54f-49ad-b29b-01d338c31b48</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BOB-12009" part="BOB-12009">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BOB-12009</field>
+        <field name="Footprint">BOB-12009:CONV_BOB-12009</field>
+        <field name="DigiKey_Part_Number">1568-1209-ND</field>
+        <field name="MF">SparkFun</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/BOB-12009/SparkFun+Electronics/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">01</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/BOB-12009/SparkFun+Electronics/view-part/?ref=snap</field>
+        <field name="MP">BOB-12009</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=551764&amp;manufacturer=SparkFun&amp;part_name=BOB-12009&amp;search_term=None</field>
+        <field name="Description">
+BSS138 Logic-Level Translator Interface Evaluation Board
+</field>
+        <field name="MANUFACTURER">SparkFun Electronics</field>
+      </fields>
+      <pins>
+        <pin num="GND_1" name="GND" type="power_in"/>
+        <pin num="GND_2" name="GND" type="power_in"/>
+        <pin num="HV" name="HV" type="bidirectional"/>
+        <pin num="HV1" name="HV1" type="bidirectional"/>
+        <pin num="HV2" name="HV2" type="bidirectional"/>
+        <pin num="HV3" name="HV3" type="bidirectional"/>
+        <pin num="HV4" name="HV4" type="bidirectional"/>
+        <pin num="LV" name="LV" type="bidirectional"/>
+        <pin num="LV1" name="LV1" type="bidirectional"/>
+        <pin num="LV2" name="LV2" type="bidirectional"/>
+        <pin num="LV3" name="LV3" type="bidirectional"/>
+        <pin num="LV4" name="LV4" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Barrel_Jack_Switch">
+      <description>DC Barrel Jack with an internal switch</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack_Switch</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Pin">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Pin">
+      <description>Generic connector, single row, 01x04, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x09_Pin">
+      <description>Generic connector, single row, 01x09, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x09_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LM2940CT-5.0_NOPB" part="LM2940CT-5.0{slash}NOPB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2940CT-5.0{slash}NOPB</field>
+        <field name="Footprint">LM2940CT-5.0/NOPB:TO254P1054X470X1955-3</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="Description">
+1-A, 26-V, high-PSRR, low-dropout voltage regulator
+</field>
+        <field name="Package">TO-220-3 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/LM2940CT-5.0/NOPB/Texas+Instruments/view-part/?ref=snap</field>
+        <field name="MP">LM2940CT-5.0/NOPB</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=18239&amp;manufacturer=Texas Instruments&amp;part_name=LM2940CT-5.0/NOPB&amp;search_term=None</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/LM2940CT-5.0/NOPB/Texas+Instruments/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_RaspberryPi_and_Boards" part="Pico">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Pico</field>
+        <field name="Footprint">RPi_Pico:RPi_Pico_SMD_TH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO0" type="bidirectional"/>
+        <pin num="2" name="GPIO1" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="GPIO2" type="bidirectional"/>
+        <pin num="5" name="GPIO3" type="bidirectional"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GPIO6" type="bidirectional"/>
+        <pin num="10" name="GPIO7" type="bidirectional"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="GPIO10" type="bidirectional"/>
+        <pin num="15" name="GPIO11" type="bidirectional"/>
+        <pin num="16" name="GPIO12" type="bidirectional"/>
+        <pin num="17" name="GPIO13" type="bidirectional"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
+        <pin num="20" name="GPIO15" type="bidirectional"/>
+        <pin num="21" name="GPIO16" type="bidirectional"/>
+        <pin num="22" name="GPIO17" type="bidirectional"/>
+        <pin num="23" name="GND" type="power_in"/>
+        <pin num="24" name="GPIO18" type="bidirectional"/>
+        <pin num="25" name="GPIO19" type="bidirectional"/>
+        <pin num="26" name="GPIO20" type="bidirectional"/>
+        <pin num="27" name="GPIO21" type="bidirectional"/>
+        <pin num="28" name="GND" type="power_in"/>
+        <pin num="29" name="GPIO22" type="bidirectional"/>
+        <pin num="30" name="RUN" type="input"/>
+        <pin num="31" name="GPIO26_ADC0" type="bidirectional"/>
+        <pin num="32" name="GPIO27_ADC1" type="bidirectional"/>
+        <pin num="33" name="AGND" type="power_in"/>
+        <pin num="34" name="GPIO28_ADC2" type="bidirectional"/>
+        <pin num="35" name="ADC_VREF" type="power_in"/>
+        <pin num="36" name="3V3" type="power_in"/>
+        <pin num="37" name="3V3_EN" type="input"/>
+        <pin num="38" name="GND" type="bidirectional"/>
+        <pin num="39" name="VSYS" type="power_in"/>
+        <pin num="40" name="VBUS" type="power_in"/>
+        <pin num="41" name="SWCLK" type="input"/>
+        <pin num="42" name="GND" type="power_in"/>
+        <pin num="43" name="SWDIO" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF" part="NRF24L01_Breakout">
+      <description>Ultra low power 2.4GHz RF Transceiver, Carrier PCB</description>
+      <docs>http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf</docs>
+      <footprints>
+        <fp>nRF24L01*Breakout*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NRF24L01_Breakout</field>
+        <field name="Footprint">RF_Module:nRF24L01_Breakout</field>
+        <field name="Datasheet">http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="CE" type="input"/>
+        <pin num="4" name="~{CSN}" type="input"/>
+        <pin num="5" name="SCK" type="input"/>
+        <pin num="6" name="MOSI" type="input"/>
+        <pin num="7" name="MISO" type="output"/>
+        <pin num="8" name="IRQ" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="RedRobotParts" part="DRV8835">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="B_IN2/B_EN" type="input"/>
+        <pin num="4" name="B_IN1/B_PH" type="input"/>
+        <pin num="5" name="A_IN2/A_EN" type="input"/>
+        <pin num="6" name="A_IN2/A_PH" type="input"/>
+        <pin num="7" name="MODE" type="input"/>
+        <pin num="8" name="VMM" type="power_out"/>
+        <pin num="9" name="A_OUT1" type="output"/>
+        <pin num="10" name="A_OUT2" type="output"/>
+        <pin num="11" name="B_OUT1" type="output"/>
+        <pin num="12" name="B_OUT2" type="output"/>
+        <pin num="13" name="VIN" type="power_in"/>
+        <pin num="14" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BOB-12009">
+      <uri>/Users/salix/School/Red Robot/BOB-12009/BOB-12009.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="LM2940CT-5.0_NOPB">
+      <uri>/Users/salix/School/Red Robot/LM2940CT-5.0_NOPB/LM2940CT-5.0_NOPB.kicad_sym</uri>
+    </library>
+    <library logical="MCU_RaspberryPi_and_Boards">
+      <uri>/Users/salix/School/Red Robot/KiCad-RP-Pico-main/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.kicad_sym</uri>
+    </library>
+    <library logical="RF">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//RF.kicad_sym</uri>
+    </library>
+    <library logical="RedRobotParts">
+      <uri>/Users/salix/School/Red Robot/RedRobotParts.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J10" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J11" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J16" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J17" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U2" pin="13" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="MODE" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="MODE" pintype="input"/>
+      <node ref="U4" pin="2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="LV" pinfunction="LV" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J14" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J15" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J9" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="OUT" pintype="output"/>
+      <node ref="U6" pin="HV" pinfunction="HV" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="+BATT">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J13" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J18" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="1" pinfunction="IN" pintype="input"/>
+    </net>
+    <net code="4" name="/M1+">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="B_OUT1" pintype="output"/>
+    </net>
+    <net code="5" name="/M1-">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="B_OUT2" pintype="output"/>
+    </net>
+    <net code="6" name="/M2+">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="A_OUT1" pintype="output"/>
+    </net>
+    <net code="7" name="/M2-">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="A_OUT2" pintype="output"/>
+    </net>
+    <net code="8" name="/M3+">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="B_OUT1" pintype="output"/>
+    </net>
+    <net code="9" name="/M3-">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="B_OUT2" pintype="output"/>
+    </net>
+    <net code="10" name="/M4+">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="A_OUT1" pintype="output"/>
+    </net>
+    <net code="11" name="/M4-">
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="A_OUT2" pintype="output"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J14" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J15" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J16" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J17" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J18" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="2" pintype="passive"/>
+      <node ref="J5" pin="3" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J7" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J8" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J9" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="18" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="23" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="28" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="33" pinfunction="AGND" pintype="power_in"/>
+      <node ref="U1" pin="38" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="U1" pin="42" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="14" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="14" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="GND_1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="GND_2" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="13" name="GPIO_LED">
+      <node ref="J12" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="34" pinfunction="GPIO28_ADC2" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="LINE_1">
+      <node ref="J11" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="GPIO6" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="LINE_2">
+      <node ref="J11" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GPIO7" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="LINE_3">
+      <node ref="J11" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="GPIO8" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="LINE_4">
+      <node ref="J11" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO9" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="LINE_5">
+      <node ref="J11" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="GPIO10" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="LINE_6">
+      <node ref="J11" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="GPIO11" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="MOTOR1_EN">
+      <node ref="U1" pin="32" pinfunction="GPIO27_ADC1" pintype="bidirectional"/>
+      <node ref="U2" pin="3" pinfunction="B_IN2/B_EN" pintype="input"/>
+    </net>
+    <net code="21" name="MOTOR1_PH">
+      <node ref="U1" pin="31" pinfunction="GPIO26_ADC0" pintype="bidirectional"/>
+      <node ref="U2" pin="4" pinfunction="B_IN1/B_PH" pintype="input"/>
+    </net>
+    <net code="22" name="MOTOR2_EN">
+      <node ref="U1" pin="27" pinfunction="GPIO21" pintype="bidirectional"/>
+      <node ref="U2" pin="5" pinfunction="A_IN2/A_EN" pintype="input"/>
+    </net>
+    <net code="23" name="MOTOR2_PH">
+      <node ref="U1" pin="26" pinfunction="GPIO20" pintype="bidirectional"/>
+      <node ref="U2" pin="6" pinfunction="A_IN2/A_PH" pintype="input"/>
+    </net>
+    <net code="24" name="MOTOR3_EN">
+      <node ref="U1" pin="25" pinfunction="GPIO19" pintype="bidirectional"/>
+      <node ref="U3" pin="3" pinfunction="B_IN2/B_EN" pintype="input"/>
+    </net>
+    <net code="25" name="MOTOR3_PH">
+      <node ref="U1" pin="24" pinfunction="GPIO18" pintype="bidirectional"/>
+      <node ref="U3" pin="4" pinfunction="B_IN1/B_PH" pintype="input"/>
+    </net>
+    <net code="26" name="MOTOR4_EN">
+      <node ref="U1" pin="22" pinfunction="GPIO17" pintype="bidirectional"/>
+      <node ref="U3" pin="5" pinfunction="A_IN2/A_EN" pintype="input"/>
+    </net>
+    <net code="27" name="MOTOR4_PH">
+      <node ref="U1" pin="21" pinfunction="GPIO16" pintype="bidirectional"/>
+      <node ref="U3" pin="6" pinfunction="A_IN2/A_PH" pintype="input"/>
+    </net>
+    <net code="28" name="NRF24_CE">
+      <node ref="U1" pin="29" pinfunction="GPIO22" pintype="bidirectional"/>
+      <node ref="U4" pin="3" pinfunction="CE" pintype="input"/>
+    </net>
+    <net code="29" name="Net-(D1-A)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="VSYS" pintype="power_in"/>
+    </net>
+    <net code="31" name="Net-(J6-Pin_1)">
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U6" pin="HV1" pinfunction="HV1" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="Net-(J7-Pin_1)">
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U6" pin="HV2" pinfunction="HV2" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="Net-(J8-Pin_1)">
+      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U6" pin="HV3" pinfunction="HV3" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="Net-(J9-Pin_1)">
+      <node ref="J9" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U6" pin="HV4" pinfunction="HV4" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="Net-(J12-Pin_1)">
+      <node ref="J12" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="36" name="SERVO1_PWM">
+      <node ref="U1" pin="20" pinfunction="GPIO15" pintype="bidirectional"/>
+      <node ref="U6" pin="LV1" pinfunction="LV1" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="SERVO2_PWM">
+      <node ref="U1" pin="19" pinfunction="GPIO14" pintype="bidirectional"/>
+      <node ref="U6" pin="LV2" pinfunction="LV2" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="SERVO3_PWM">
+      <node ref="U1" pin="17" pinfunction="GPIO13" pintype="bidirectional"/>
+      <node ref="U6" pin="LV3" pinfunction="LV3" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="SERVO4_PWM">
+      <node ref="U1" pin="16" pinfunction="GPIO12" pintype="bidirectional"/>
+      <node ref="U6" pin="LV4" pinfunction="LV4" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="SPI0_CSn">
+      <node ref="U1" pin="2" pinfunction="GPIO1" pintype="bidirectional"/>
+      <node ref="U4" pin="4" pinfunction="~{CSN}" pintype="input"/>
+    </net>
+    <net code="41" name="SPI0_RX">
+      <node ref="U1" pin="1" pinfunction="GPIO0" pintype="bidirectional"/>
+      <node ref="U4" pin="7" pinfunction="MISO" pintype="output"/>
+    </net>
+    <net code="42" name="SPI0_SCK">
+      <node ref="U1" pin="4" pinfunction="GPIO2" pintype="bidirectional"/>
+      <node ref="U4" pin="5" pinfunction="SCK" pintype="input"/>
+    </net>
+    <net code="43" name="SPI0_TX">
+      <node ref="U1" pin="5" pinfunction="GPIO3" pintype="bidirectional"/>
+      <node ref="U4" pin="6" pinfunction="MOSI" pintype="input"/>
+    </net>
+    <net code="44" name="US_ECHO">
+      <node ref="J10" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPIO5" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="US_TRIG">
+      <node ref="J10" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO4" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="unconnected-(J11-Pin_3-Pad3)">
+      <node ref="J11" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-3V3_EN-Pad37)">
+      <node ref="U1" pin="37" pinfunction="3V3_EN" pintype="input+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-ADC_VREF-Pad35)">
+      <node ref="U1" pin="35" pinfunction="ADC_VREF" pintype="power_in+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-RUN-Pad30)">
+      <node ref="U1" pin="30" pinfunction="RUN" pintype="input+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-SWCLK-Pad41)">
+      <node ref="U1" pin="41" pinfunction="SWCLK" pintype="input+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-SWDIO-Pad43)">
+      <node ref="U1" pin="43" pinfunction="SWDIO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-VBUS-Pad40)">
+      <node ref="U1" pin="40" pinfunction="VBUS" pintype="power_in+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U2-VMM-Pad8)">
+      <node ref="U2" pin="8" pinfunction="VMM" pintype="power_out+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U3-VMM-Pad8)">
+      <node ref="U3" pin="8" pinfunction="VMM" pintype="power_out+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U4-IRQ-Pad8)">
+      <node ref="U4" pin="8" pinfunction="IRQ" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

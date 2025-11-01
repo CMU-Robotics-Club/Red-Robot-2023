@@ -1,5 +1,5 @@
 // Replace 12345 with the correct team number and then uncomment the line below.
-#define TEAM_NUMBER 1
+// #define TEAM_NUMBER 12345
 
 #ifndef TEAM_NUMBER
 #error "Define your team number with `#define TEAM_NUMBER 12345` at the top of the file."

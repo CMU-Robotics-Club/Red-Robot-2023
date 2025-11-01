@@ -3,23 +3,25 @@
 
 #ifndef TEAM_NUMBER
 #error "Define your team number with `#define TEAM_NUMBER 12345` at the top of the file."
-#elif TEAM_NUMBER < 1 || 20 < TEAM_NUMBER
-#error "Team number must be within 1 and 20"
+#elif TEAM_NUMBER < 1 || 40 < TEAM_NUMBER
+#error "Team number must be within 1 and 40"
 #endif
 
-void setup() {
+void setup()
+{
   Serial.begin(115200);
 }
 
 int temp = 0;
 
-void loop() {
+void loop()
+{
   // Read the four joystick axes
   // These will be in the range [-1.0, 1.0]
   float rightX = RR_axisRX();
   float rightY = RR_axisRY();
-  float leftX  = RR_axisLX();
-  float leftY  = RR_axisLY();
+  float leftX = RR_axisLX();
+  float leftY = RR_axisLY();
 
   // Arcade-drive scheme
   // Left Y-axis = throttle
@@ -36,39 +38,49 @@ void loop() {
   bool btnLB = RR_buttonLB();
 
   // Control motor3 port (unused on base robot) using A/B buttons
-  if (btnA) {
+  if (btnA)
+  {
     RR_setMotor3(1.0);
   }
-  else if (btnB) {
+  else if (btnB)
+  {
     RR_setMotor3(-1.0);
   }
-  else {
+  else
+  {
     RR_setMotor3(0.0);
   }
 
   // Control motor4 port (unused on base robot) using X/Y buttons
-  if (btnX) {
+  if (btnX)
+  {
     RR_setMotor4(1.0);
   }
-  else if (btnY) {
+  else if (btnY)
+  {
     RR_setMotor4(-1.0);
   }
-  else {
+  else
+  {
     RR_setMotor4(0.0);
   }
 
   // Control servo 1 using the dpad
   // 6 = left, 2 = right, 0 = up, 4 = down, 8 = center
-  if (RR_dpad() == 6) { // left
+  if (RR_dpad() == 6)
+  { // left
 
     // we can't move a servo less than 0 degrees
-    if (temp > 0) temp -= 10;
+    if (temp > 0)
+      temp -= 10;
   }
-  else if (RR_dpad() == 2) { // right
+  else if (RR_dpad() == 2)
+  { // right
 
     // we can't move a servo past 180 degrees
     // for continuous rotation, try using a DC motor
-    if (temp < 180) temp += 10;
+    if (temp < 180)
+      temp += 10;
   }
   RR_setServo1(temp);
 
@@ -77,15 +89,16 @@ void loop() {
   // You can change the angles based on your mechanism
   // (this is great for a mechanism that only has 2 states,
   //  such as a grabber or hook)
-  if (btnRB) {
+  if (btnRB)
+  {
     RR_setServo2(180);
   }
-  else if (btnLB) {
+  else if (btnLB)
+  {
     RR_setServo2(0);
   }
 
   // we also have RR_setServo3 and RR_setServo4 available
-
 
   // read the ultrasonic sensors
 
@@ -96,7 +109,8 @@ void loop() {
 
   Serial.print("Line sensors=");
   RR_getLineSensors(sensors);
-  for (int i = 0; i < 6; ++i) {
+  for (int i = 0; i < 6; ++i)
+  {
     Serial.print(sensors[i]);
     Serial.print(" ");
   }

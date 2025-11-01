@@ -29,7 +29,7 @@
 
 uint8_t TARGET_ADDRESS[] = {0xF0,0xF0,0xF0,0xF0,0xD2};
 uint8_t LOCAL_ADDRESS[] = {0xF0,0xF0,0xF0,0xF0,0xE1};
-#define CHANNEL (TEAM_NUMBER * 6) // 0-125
+#define CHANNEL (TEAM_NUMBER * 3) // 0-125
 #define RF_POWER_LEVEL RF24_PA_HIGH
 
 RF24 radio(22, 1, 1000000);

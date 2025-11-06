@@ -1,38 +1,14 @@
-# USB Joystick Interface for 2023 Red Robot Hackathon
+# USB Joystick Interface for 2025 Red Robot Hackathon
 # Reads button and axis input from Logitech Gamepad F310
 # Packs data to be sent over serial to NRF24L01+ USB adapter
 
 import sys
-import glob
 import hid
 import time
-import serial
-import serial.tools.list_ports
 import random
 
-def find_serial_port():
-    if sys.platform.startswith('darwin'):
-        ports = glob.glob('/dev/tty.usbserial-*')
-    elif sys.platform.startswith('win'):
-        ports = filter(lambda x: x.pid == 29987, serial.tools.list_ports.comports())
-        ports = list(map(lambda x: x.name, ports))
-    else:
-        raise Exception('TODO:')
+from common import find_serial_port
 
-    radio = None
-
-    for port in ports:
-        try:
-            print(port)
-            radio = serial.Serial(port, baudrate=115200)
-        except (OSError, serial.SerialException):
-            pass
-        
-    if radio is None:
-        print('Could not find radio! Is the dongle plugged in?')
-        sys.exit(1)
-    
-    return radio
 
 def find_joystick():
     joystick_id = None
@@ -45,7 +21,7 @@ def find_joystick():
         sys.exit(1)
 
     print("Found controller with id", joystick_id)
-        
+
     joystick = hid.device()
     joystick.open(joystick_id[0], joystick_id[1])
     joystick.set_nonblocking(True)

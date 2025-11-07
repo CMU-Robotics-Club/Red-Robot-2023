@@ -26,10 +26,7 @@ Install [Python 3](https://www.python.org/downloads/) from the official website.
 
 The drivers for the radio module should be installed by default.
 
-#### Linux 
-
-Hopefully someone on your team isn't using Linux.
-If everyone on your team is using Linux, good luck!
+#### Linux (Ubuntu / Debian) 
 
 Install Python 3, probably using a command like the following:
 
@@ -37,8 +34,7 @@ Install Python 3, probably using a command like the following:
 $ sudo apt install python3
 ```
 
-If you're on Linux, you will need to uninstall the Braille TTY to make the radio work properly.
-If you are blind and rely on a braille teletype, we apologize for any inconvenience.
+If you're on Linux, you may need to uninstall the Braille TTY to make the radio work properly.
 
 ```
 $ sudo apt remove brltty
@@ -49,6 +45,18 @@ Then, you will need to add your user to the dialout group to use the radio.
 ```
 $ sudo useradd yourusernamehere dialout
 ```
+
+Log out and log in again to make the group change take effect.
+
+## Programming the Radio
+Before you can control your robot you will need to program your radio. Plug
+the radio into the adapter board like this:
+
+![](radio.png)
+
+Run either `program_radio_mac.sh` or `program_radio_windows.sh`, depending on
+your operating system. This will prompt for your team number (this is the
+number on the side of your kit)
 
 ## Deploying Code
 
